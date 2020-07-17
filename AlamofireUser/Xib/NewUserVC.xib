@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NewUserVC" customModule="AlamofireUser" customModuleProvider="target">
+            <connections>
+                <outlet property="bttnAddUpdateUser" destination="Szp-nC-d8d" id="CM1-EO-HXc"/>
+                <outlet property="lblInformation" destination="9CF-B1-HaE" id="L2a-bM-AKv"/>
+                <outlet property="txtExtension" destination="S2E-5d-zlo" id="dT5-AR-bVj"/>
+                <outlet property="txtFName" destination="7W6-Jo-hr8" id="zwy-fF-KPw"/>
+                <outlet property="txtLName" destination="egm-re-h26" id="BBe-9K-9fb"/>
+                <outlet property="txtMName" destination="dnQ-8T-u5h" id="NQT-tc-E3b"/>
+                <outlet property="txtMailid" destination="xjt-jH-jD4" id="qiG-cx-KHg"/>
+                <outlet property="txtMobile" destination="Fi1-aj-gyf" id="gCg-gL-OWx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVz-9s-fGr" customClass="viewUV" customModule="AlamofireUser" customModuleProvider="target">
+                    <rect key="frame" x="38" y="128" width="339" height="566"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Yu-hK-Yfc">
+                            <rect key="frame" x="303" y="8" width="28" height="28"/>
+                            <state key="normal" image="closeButton"/>
+                            <connections>
+                                <action selector="ActionClose:" destination="-1" eventType="touchUpInside" id="b4V-fm-hyC"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="5qf-9V-AYU">
+                            <rect key="frame" x="19" y="60" width="300" height="352"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7W6-Jo-hr8" customClass="txtField" customModule="AlamofireUser" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="czb-dC-nrM"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Middle Name" minimumFontSize="17" id="dnQ-8T-u5h" customClass="txtField" customModule="AlamofireUser" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="63" width="300" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" id="egm-re-h26" customClass="txtField" customModule="AlamofireUser" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="126" width="300" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mail Id" minimumFontSize="17" id="xjt-jH-jD4" customClass="txtField" customModule="AlamofireUser" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="189" width="300" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Extension No" minimumFontSize="17" id="S2E-5d-zlo" customClass="txtField" customModule="AlamofireUser" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="252" width="300" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile No" minimumFontSize="17" id="Fi1-aj-gyf" customClass="txtField" customModule="AlamofireUser" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="315" width="300" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                    <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CF-B1-HaE">
+                            <rect key="frame" x="19" y="417" width="300" height="23.5"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="300" id="Azy-wN-dI1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                            <color key="textColor" red="0.61450511220000004" green="0.14198878409999999" blue="0.11855889109999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Szp-nC-d8d">
+                            <rect key="frame" x="103" y="441.5" width="132" height="53"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="132" id="g47-ny-y4P"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                            <state key="normal" title="Add user">
+                                <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="ActionAddUser:" destination="-1" eventType="touchUpInside" id="7fY-ls-72N"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90588235294117647" green="0.87450980392156863" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="0Yu-hK-Yfc" secondAttribute="trailing" constant="8" id="6Eq-dh-ExQ"/>
+                        <constraint firstAttribute="trailing" secondItem="Szp-nC-d8d" secondAttribute="trailing" constant="104" id="8Sa-um-sQf"/>
+                        <constraint firstItem="9CF-B1-HaE" firstAttribute="leading" secondItem="cVz-9s-fGr" secondAttribute="leading" constant="19" id="A2Z-Kp-b7H"/>
+                        <constraint firstAttribute="trailing" secondItem="5qf-9V-AYU" secondAttribute="trailing" constant="20" id="AAY-EY-QlL"/>
+                        <constraint firstItem="5qf-9V-AYU" firstAttribute="leading" secondItem="cVz-9s-fGr" secondAttribute="leading" constant="19" id="Bnf-Fp-GW2"/>
+                        <constraint firstAttribute="trailing" secondItem="9CF-B1-HaE" secondAttribute="trailing" constant="20" id="TY5-Ed-ydf"/>
+                        <constraint firstItem="0Yu-hK-Yfc" firstAttribute="top" secondItem="cVz-9s-fGr" secondAttribute="top" constant="8" id="Wn8-Ao-Djp"/>
+                        <constraint firstItem="5qf-9V-AYU" firstAttribute="top" secondItem="0Yu-hK-Yfc" secondAttribute="bottom" constant="24" id="ftG-Op-xu7"/>
+                        <constraint firstItem="Szp-nC-d8d" firstAttribute="top" secondItem="9CF-B1-HaE" secondAttribute="bottom" constant="1" id="u7B-0b-Flg"/>
+                        <constraint firstItem="Szp-nC-d8d" firstAttribute="leading" secondItem="cVz-9s-fGr" secondAttribute="leading" constant="103" id="wTY-ry-KKj"/>
+                        <constraint firstItem="9CF-B1-HaE" firstAttribute="top" secondItem="5qf-9V-AYU" secondAttribute="bottom" constant="5" id="wxu-ah-F7t"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="cVz-9s-fGr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="38" id="Ndc-DO-ZVM"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cVz-9s-fGr" secondAttribute="bottom" constant="168" id="XWQ-Ll-723"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cVz-9s-fGr" secondAttribute="trailing" constant="37" id="d89-vA-kCg"/>
+                <constraint firstItem="cVz-9s-fGr" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="84" id="djo-ST-zkj"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="131.8840579710145" y="150.66964285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeButton" width="28" height="28"/>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module ODataSwift {
+  umbrella header "ODataSwift-umbrella.h"
+
+  export *
+  module * { export * }
+}

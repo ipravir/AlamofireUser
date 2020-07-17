@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AlamofireUser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="du8-X9-rgb">
+                                <rect key="frame" x="57" y="262" width="300" height="140"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kNx-Po-NaQ" customClass="txtField" customModule="AlamofireUser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="HDZ-v3-jpM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDY-Jp-FXa" customClass="txtField" customModule="AlamofireUser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="90" width="300" height="50"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="KRt-hH-iTV"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="ugj-qc-zds">
+                                <rect key="frame" x="57" y="440" width="300" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6uK-Fm-AJX" customClass="bttnFuncs" customModule="AlamofireUser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="50"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ActionLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bkb-fs-R4D"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udb-9q-k42" customClass="bttnFuncs" customModule="AlamofireUser" customModuleProvider="target">
+                                        <rect key="frame" x="180" y="0.0" width="120" height="50"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="7bm-aY-G0E"/>
+                                        </constraints>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ActionCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vcu-Eb-KxU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6uK-Fm-AJX" firstAttribute="leading" secondItem="ugj-qc-zds" secondAttribute="leading" id="2yr-Fu-2Wp"/>
+                                    <constraint firstAttribute="height" constant="50" id="xuv-bC-r5P"/>
+                                </constraints>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="users" translatesAutoresizingMaskIntoConstraints="NO" id="lrJ-z0-nS4">
+                                <rect key="frame" x="87" y="106" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zru-My-J3E">
+                                <rect key="frame" x="57" y="512" width="300" height="27.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="iul-sD-tYf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15469652410000001" green="0.31807327270000002" blue="0.38854551320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Zru-My-J3E" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="57" id="3FD-wJ-ZQU"/>
+                            <constraint firstItem="Zru-My-J3E" firstAttribute="top" secondItem="ugj-qc-zds" secondAttribute="bottom" constant="22" id="FA8-yu-bCB"/>
+                            <constraint firstItem="du8-X9-rgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GNK-3k-Ylc"/>
+                            <constraint firstItem="ugj-qc-zds" firstAttribute="top" secondItem="du8-X9-rgb" secondAttribute="bottom" constant="38" id="KtO-Xf-5UY"/>
+                            <constraint firstItem="du8-X9-rgb" firstAttribute="leading" secondItem="ugj-qc-zds" secondAttribute="leading" id="T89-rs-nfp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Zru-My-J3E" secondAttribute="trailing" constant="57" id="ezK-UO-Ko1"/>
+                            <constraint firstItem="du8-X9-rgb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="218" id="tfJ-Jy-EHx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblInformation" destination="Zru-My-J3E" id="ZGa-Y4-dOs"/>
+                        <outlet property="txtPassword" destination="cDY-Jp-FXa" id="96f-wY-WIg"/>
+                        <outlet property="txtUserID" destination="kNx-Po-NaQ" id="VZH-ws-m3k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="134.59821428571428"/>
+        </scene>
+        <!--User DetailsVC-->
+        <scene sceneID="i87-I8-Nfv">
+            <objects>
+                <viewController storyboardIdentifier="userDetailsVC" id="lwB-vD-fIH" customClass="userDetailsVC" customModule="AlamofireUser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3At-ZI-Qtv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="efo-YJ-Vzo">
+                                <rect key="frame" x="0.0" y="109" width="428" height="787"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.15469652410000001" green="0.31807327270000002" blue="0.38854551320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="separatorColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" red="0.15469652410000001" green="0.31807327270000002" blue="0.38854551320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="userDetailsCell" rowHeight="96" id="qZV-m4-s88" customClass="userDetailsCell" customModule="AlamofireUser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="428" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qZV-m4-s88" id="aOn-6u-azp">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="96"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="tc2-nn-s0S">
+                                                    <rect key="frame" x="10" y="0.0" width="400" height="86.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmh-fy-9xu">
+                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Mail Id" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FBX-e6-tHr">
+                                                            <rect key="frame" x="0.0" y="29.5" width="400" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Contact Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fW-8y-Xk7">
+                                                            <rect key="frame" x="0.0" y="59" width="400" height="27.5"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="400" id="ODz-NY-ebR"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tc2-nn-s0S" firstAttribute="leading" secondItem="aOn-6u-azp" secondAttribute="leading" constant="10" id="Pud-eZ-tRl"/>
+                                                <constraint firstItem="tc2-nn-s0S" firstAttribute="top" secondItem="aOn-6u-azp" secondAttribute="top" id="opX-P0-syZ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.12549019610000001" green="0.25098039220000001" blue="0.31372549020000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="lblFulleName" destination="Vmh-fy-9xu" id="Cn6-WR-EyB"/>
+                                            <outlet property="lblMail" destination="FBX-e6-tHr" id="t0Z-3e-yuT"/>
+                                            <outlet property="lblMobile" destination="5fW-8y-Xk7" id="ev2-34-iuH"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TNU-0T-kb1">
+                                <rect key="frame" x="47" y="44" width="320" height="40"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rnw-lU-zsh" customClass="bttnFuncs" customModule="AlamofireUser" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="40"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="0Vu-eF-Alm"/>
+                                            <constraint firstAttribute="height" constant="40" id="8mQ-TS-m6B"/>
+                                        </constraints>
+                                        <state key="normal" title="Logout">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ActionLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E5C-VW-HsN"/>
+                                            <action selector="ActionLogout:" destination="lwB-vD-fIH" eventType="touchUpInside" id="1Jv-MM-SYD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QMO-tU-zOv" customClass="bttnFuncs" customModule="AlamofireUser" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="0.0" width="100" height="40"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Add user">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ActionAddNewUser:" destination="lwB-vD-fIH" eventType="touchUpInside" id="N7F-ka-1PW"/>
+                                            <action selector="ActionCancel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l7h-a9-SBw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fAU-6h-9qC" customClass="bttnFuncs" customModule="AlamofireUser" customModuleProvider="target">
+                                        <rect key="frame" x="220" y="0.0" width="100" height="40"/>
+                                        <color key="backgroundColor" red="0.35686274509999999" green="0.62352941179999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Close">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="ActionCloseApp:" destination="lwB-vD-fIH" eventType="touchUpInside" id="5kf-0L-t5K"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.15469652410000001" green="0.31807327270000002" blue="0.38854551320000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TNU-0T-kb1" firstAttribute="top" secondItem="6Ii-hc-LX4" secondAttribute="top" id="1Mn-lY-Wr1"/>
+                            <constraint firstItem="6Ii-hc-LX4" firstAttribute="trailing" secondItem="TNU-0T-kb1" secondAttribute="trailing" constant="47" id="EVe-CL-MAd"/>
+                            <constraint firstItem="TNU-0T-kb1" firstAttribute="leading" secondItem="6Ii-hc-LX4" secondAttribute="leading" constant="47" id="SCy-En-dPi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Ii-hc-LX4"/>
+                    </view>
+                    <connections>
+                        <outlet property="oUsertable" destination="efo-YJ-Vzo" id="9Ey-5S-TCz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hxW-kY-ion" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="839.13043478260875" y="131.91964285714286"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="users" width="600" height="400"/>
+    </resources>
+</document>
